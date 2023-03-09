@@ -12,10 +12,10 @@
 
     <nav>  
         <div class="d-flex gap-2 bg-light p-3 rounded-2">
-            <a class="btn btn-link text-decoration-none hover-effect" href="/">Home</a>    
-            <a class="btn btn-link text-decoration-none hover-effect" href="/home/about">About</a>    
-            <a class="btn btn-link text-decoration-none hover-effect" href="/home/privacy">Privacy</a>
-            <a class="btn btn-link text-decoration-none hover-effect" href="/student/index">Students</a>
+            <a class="btn btn-link text-decoration-none hover-effect" asp-controller="Home" asp-action="Index">Home</a>    
+            <a class="btn btn-link text-decoration-none hover-effect" asp-controller="Home" asp-action="About">About</a>    
+            <a class="btn btn-link text-decoration-none hover-effect" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a class="btn btn-link text-decoration-none hover-effect" asp-controller="Student" asp-action="Index">Students</a>
         </div>      
     </nav>
     
