@@ -4,7 +4,7 @@ using SMS.Data.Entities;
 
 namespace SMS.Data.Repository;
 
-public class DataContext : DbContext
+internal class DataContext : DbContext
 {
     public DbSet<Student> Students { get; set; }
     
