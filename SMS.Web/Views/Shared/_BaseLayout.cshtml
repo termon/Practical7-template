@@ -9,24 +9,10 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 </head>
 <body>
-
-    <nav>  
-        <div class="d-flex gap-2 bg-light p-3 rounded-2">
-            <a class="btn btn-link text-decoration-none hover-effect" href="/">Home</a>    
-            <a class="btn btn-link text-decoration-none hover-effect" href="/home/about">About</a>    
-            <a class="btn btn-link text-decoration-none hover-effect" href="/home/privacy">Privacy</a>
-            <a class="btn btn-link text-decoration-none hover-effect" href="/student/index">Students</a>
-        </div>      
-    </nav>
     
-    <main class="container mt-4">
-        @RenderBody()
+    <main class="container">
+       @RenderBody()
     </main>
 
-    <footer class="footer border-top bg-light text-muted text-center">
-        &copy; 2023 - SMS.Web 
-    </footer>
-
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
