@@ -10,6 +10,32 @@
 </head>
 <body>
 
+
+    <nav>  
+        <div class="">
+            <a class="" href="/Home/Index">Home</a>    
+            <a class="" href="/Home/About">About</a>    
+            <a class="" href="/Home/Privacy">Privacy</a>            
+        </div>      
+    </nav>
+
+    <nav>  
+        <div class="">
+            <a class="" asp-controller="Home" asp-action="Index">Home</a>    
+            <a class="" asp-controller="Home" asp-action="About">About</a>    
+            <a class="" asp-controller="Home" asp-action="Privacy">Privacy</a>            
+        </div>      
+    </nav>
+
+    <nav>  
+        <div class="d-flex gap-2 bg-light p-3 rounded-2">
+            <a class="" asp-controller="Home" asp-action="About">About</a>    
+            <a class="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a class="" asp-controller="Home" asp-action="Index">Home</a>    
+            <a class="" asp-controller="Student" asp-action="Index">Students</a>
+        </div>      
+    </nav>
+
     <nav>  
         <div class="d-flex gap-2 bg-light p-3 rounded-2">
             <a class="btn btn-link text-decoration-none hover-effect" asp-controller="Home" asp-action="Index">Home</a>    

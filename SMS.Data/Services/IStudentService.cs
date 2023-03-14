@@ -12,12 +12,10 @@ public interface IStudentService
     // ---------------- Student Management --------------
     List<Student> GetStudents();
     Student GetStudent(int id);
-    //Student AddStudent(string name, string course, string email, int age, double grade);
+    Student GetStudentByEmail(string email);
     Student AddStudent(Student s);
     Student UpdateStudent(Student updated);  
     bool DeleteStudent(int id);
 
-    // new interface method
-    Student GetStudentByEmail(string email);
 }
     
